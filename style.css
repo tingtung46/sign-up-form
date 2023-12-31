@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Norse-Bold.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    --green-btn-color: #596D48;
+    --light-border-color: #E5E7EB;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-weight:700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: var(--green-btn-color);
+    font-weight: 600;
+}
+
+div label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+div input {
+    margin-bottom: 1rem;
+    border: 1px solid var(--light-border-color);
+}
+
+div input:focus {
+    border: 1px solid rgb(61, 61, 248);
+    border-radius: 3px;
+    outline: none;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.error {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(201, 3, 3);
+    display: block;
+    margin-bottom: .5rem;
+}
+
+.account > p {
+    font-weight: 500;
+}
+
+.logo-text {
+    font-family: 'Norse-Bold';
+    color: white;
+    font-size: 4.5rem;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 100px;
+    position: relative;
+    top: 20%;
+}
+
+img {
+    width: 60px;
+    height: auto;
+}
+
+.split-screen {
+    display: flex;
+}
+
+.left {
+    height: 100svh;
+    min-width: 400px;
+    background: url(images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+}
+
+.right {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.new-form > div {
+    display: flex;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.password > div > input {
+    margin-bottom: 0;
+}
+
+form {
+    margin-bottom: 2rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: .6rem 2rem;
+    color: white;
+    font-weight: 700;
+    background-color: var(--green-btn-color);
+    cursor: pointer;
+    border-style: none;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}

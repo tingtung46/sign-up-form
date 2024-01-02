@@ -41,6 +41,7 @@ div label {
 div input {
     margin-bottom: 1rem;
     border: 1px solid var(--light-border-color);
+    border-radius: 3px;
 }
 
 div input:focus {
